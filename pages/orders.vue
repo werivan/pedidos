@@ -319,11 +319,8 @@ export default {
     ],
     stateList: [
       { text: 'Producto No encontrado', value: 'producto-no-encontrado' },
-      { text: 'Factura Generada', value: 'factura-generada' },
-      { text: 'Orden Guardada', value: 'orden-guardada' },
-      { text: 'Notificacion Enviada', value: 'notificacion-enviada' },
+      { text: 'Pedido exitoso', value: 'pedido-exitoso' },
       { text: 'Stock Confirmado', value: 'stock-confirmado' },
-      { text: 'Orden Completada', value: 'orden-completada' },
       { text: 'Stock Insuficiente', value: 'stock-insuficiente' }
     ],
     resultItems: [],
@@ -503,45 +500,15 @@ export default {
 
 .stock-confirmado_status {
   i {
-    color: #ffeb3b !important; // Amarillo
+    color: #a1f700 !important; // Amarillo
   }
   span {
-    color: #ffeb3b;
+    color: #a1f700;
     font-weight: 600;
   }
 }
 
-.orden-guardada_status {
-  i {
-    color: #fbc02d !important; // Amarillo oscuro
-  }
-  span {
-    color: #fbc02d;
-    font-weight: 600;
-  }
-}
-
-.factura-generada_status {
-  i {
-    color: #aed581 !important; // Verde amarillento
-  }
-  span {
-    color: #aed581;
-    font-weight: 600;
-  }
-}
-
-.notificacion-enviada_status {
-  i {
-    color: #a5d6a7 !important; // Verde claro
-  }
-  span {
-    color: #a5d6a7;
-    font-weight: 600;
-  }
-}
-
-.orden-completada_status {
+.pedido-exitoso_status {
   i {
     color: #66bb6a !important; // Verde
   }
