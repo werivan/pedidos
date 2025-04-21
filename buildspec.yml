@@ -3,17 +3,25 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18 # o 16 o 18, dependiendo tu proyecto
+      nodejs: 18
     commands:
-      - echo "Instalando dependencias..."
+      - echo Listing directories...
+      - ls -l # Lista el contenido del directorio actual
+      - echo Installing dependencies...
       - npm install
 
   build:
     commands:
-      - echo "Ejecutando build de Vue.js"
+      - echo Building the project...
       - npm run build
+      - echo Listing files after build...
+      - ls -l # Lista el contenido del directorio actual después de la construcción
+
+  post_build:
+    commands:
+      - echo Build completed successfully.
 
 artifacts:
   files:
     - '**/*'
-  base-directory: dist # donde Vue guarda el resultado del build
+  base-directory: dist
