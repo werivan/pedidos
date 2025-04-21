@@ -51,12 +51,6 @@ export default {
   axios: {
     proxy: true
   },
-  proxy: {
-    '/api-back': {
-      target: process.env.XPRESS_BACK,
-      pathRewrite: { '^/api-back': '/' }
-    }
-  },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

@@ -6,17 +6,7 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "buildc": "npm run clean && nuxt build",
-    "start": "nuxt start",
-    "startPM2": "npm run buildc && npm run prod",
-    "prod": "pm2 start ecosystem.config.js --env production",
-    "startbc": "npm run buildc && nuxt start",
-    "generate": "nuxt generate",
-    "generatec": "npm run clean && nuxt generate",
-    "clean": "npx nuxi clean",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js",
-    "test": "jest"
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
