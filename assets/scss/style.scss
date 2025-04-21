@@ -1,0 +1,329 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.height-full {
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: $primary-color !important;
+  color: $white-color !important;
+  border-color: $secondary-color !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  text-transform: none !important;
+  border-radius: 10px !important;
+  padding: 20px 10px !important;
+  font-size: 16px !important;
+}
+
+.btn-secondary {
+  background: $secondary-color !important;
+  color: $white-color !important;
+  border-color: $primary-color !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  text-transform: none !important;
+  border-radius: 10px !important;
+  padding: 20px 10px !important;
+  font-size: 16px !important;
+}
+
+.field-custom .v-input__slot {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.field-custom .v-input__slot:before,
+.field-custom .v-input__slot:after {
+  border-style: none !important;
+}
+
+.logo-xpr-img {
+  img {
+    max-height: 70px;
+    margin: 20px;
+  }
+}
+
+.welcome-img {
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.btn-link {
+  i {
+    color: $blue-color !important;
+  }
+
+  span {
+    color: $blue-color;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $blue-color-hover !important;
+    }
+
+    span {
+      color: $blue-color-hover;
+    }
+  }
+}
+
+.dialog-mod {
+  border-radius: 20px;
+  .dialog-close {
+    color: $black-color;
+  }
+  .dialog-close:hover {
+    color: $black-color-hover;
+  }
+  .v-card__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white-color !important;
+  }
+  .v-card__actions {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+.color-green {
+  color: $green-color;
+  i {
+    color: $green-color !important;
+  }
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid $primary-color;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: $primary-color transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  span {
+    margin-top: 10px;
+  }
+  .v-icon {
+    font-size: 75px;
+    color: $red-color;
+  }
+}
+
+.circle_warning {
+  &::after {
+    display: none !important;
+  }
+  font-size: 100px !important;
+  text-align: center;
+  width: 100%;
+  color: $yellow-color !important;
+  padding: 20px;
+}
+
+.circle_error {
+  &::after {
+    display: none !important;
+  }
+  font-size: 100px !important;
+  text-align: center;
+  width: 100%;
+  color: $red-color !important;
+  padding: 20px;
+}
+.text_error {
+  color: $black-color;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  div {
+    padding: 0px 2px;
+  }
+}
+.icon-active {
+  i {
+    color: $green-color !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $green-color-hover;
+    }
+  }
+}
+
+.icon-inactive {
+  i {
+    color: $red-color !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $red-color-hover;
+    }
+  }
+}
+
+.icon-pass {
+  i {
+    color: $primary-color !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $primary-color-hover;
+    }
+  }
+}
+
+.icon-help {
+  i {
+    color: $yellow-color !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $yellow-color-hover;
+    }
+  }
+}
+
+.icon-edit {
+  i {
+    color: $primary-color !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $primary-color-hover;
+    }
+  }
+}
+
+.icon-role {
+  i {
+    color: $primary-color !important;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      color: $primary-color-hover;
+    }
+  }
+}
+.icon-see {
+  i {
+    color: $black-color !important;
+  }
+  &:hover {
+    cursor: pointer;
+    i {
+      color: $black-color-hover;
+    }
+  }
+}
+.icon-approved {
+  i {
+    color: $green-color !important;
+  }
+  &:hover {
+    cursor: pointer;
+    i {
+      color: $green-color-hover;
+    }
+  }
+}
+.icon-reject {
+  i {
+    color: $red-color !important;
+  }
+  &:hover {
+    cursor: pointer;
+    i {
+      color: $red-color-hover;
+    }
+  }
+}
+
+.max-height-table-orders .v-data-table__wrapper {
+  max-height: calc(100vh - 340px);
+}
+@media only screen and (max-width: 599px) {
+  .welcome-img {
+    display: none;
+  }
+}

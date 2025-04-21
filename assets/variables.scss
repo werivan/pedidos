@@ -1,0 +1,38 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$primary-color: #f46b00; // Naranja principal del logo
+$primary-color-hover: #d65f00; // Un poco más oscuro para hover
+$secondary-color: #d22128; // Rojo intenso (curva)
+$white-color: #ffffff; // Fondo claro de la presentación
+$grey-color: #666666; // Mantiene un gris útil
+$grey-color-hover: #888888;
+
+$black-color: #000000; // Negro profundo (curva inferior)
+$black-color-hover: #222222;
+
+$green-color: #2ed47a; // Puedes mantener este si tienes alertas de éxito
+$green-color-hover: #79cd53;
+
+$red-color: #f44336; // Para errores, puedes dejarlo
+$red-color-hover: #f78981;
+
+$yellow-color: #ffbf00; // Para warnings, combina bien con el naranja
+$yellow-color-hover: #a17c0e;
+
+$blue-color: #0070ff; // Lo puedes mantener si tienes acciones info
+$blue-color-hover: #05a4af; // Azul agua (complementario)
+
+$blue-light-color: #b3e6db; // Puedes mantener para backgrounds claros
+$blue-light-color-hover: #80c9b9;
+
+$red-high-color: #530000; // Puedes mantener para backgrounds claros
+$red-high-color-hover: #bd2b2b;
+
+$purple-color: #a303ff; // No es parte del branding pero puede quedarse
+$purple-color-hover: #550186;
+
+$orange-color: #f46b00; // Coincide con primary
+$orange-color-hover: #ad6f00; // Variante más quemada

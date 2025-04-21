@@ -1,0 +1,40 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        [
+          "@nuxt/babel-preset-app",
+          {
+            "modules": false,
+            "debug": true
+          }
+        ]
+      ]
+    },
+    "development": {
+      "presets": [
+        [
+          "@nuxt/babel-preset-app",
+          {
+            "modules": false,
+            "debug": true
+          }
+        ]
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            },
+            "modules": "commonjs",
+            "debug": true
+          }
+        ]
+      ]
+    }
+  }
+}
