@@ -101,11 +101,14 @@ export default {
     scss: ['./assets/scss/*.scss']
   },
   env: {
-    API_GATEWAY_URL: process.env.API_GATEWAY_URL,
+    DEBUG: process.env.API_GATEWAY_URL,
+    NODE_ENV: process.env.NODE_ENV,
+    SECRET_KEY: process.env.SECRET_KEY,
     API_DUMMY_API: process.env.API_DUMMY_API,
     COGNITO_CLIENT_ID: process.env.COGNITO_CLIENT_ID,
     COGNITO_USER_POOL_ID: process.env.COGNITO_USER_POOL_ID,
-    NODE_ENV: process.env.NODE_ENV,
-    SECRET_KEY: process.env.SECRET_KEY
+    API_GATEWAY_URL: process.env.API_GATEWAY_URL,
+    API_GATEWAY_ENVIROMENT: process.env.API_GATEWAY_ENVIROMENT,
+    API_GATEWAY_ID: process.env.API_GATEWAY_ID
   }
 }
